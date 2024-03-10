@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #8A51FC;
+}
+
+.logo {
+    width: 300px;
+    display: block;  /* centralizar imagem, os dois lados tem que estar auto*/
+    margin: 20px auto; /* cima e baixo 20px e dos lados auto*/
+}
+
+main {
+    width: 375px;
+    border-radius: 20px;
+    background: #F4F4F4;
+    margin: 0 auto 40px; /* centraliza o main*/
+    padding: 44px 24px 23px;  /* 44px para cima e baixo, 24px para os lados*/
+
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+select {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%; /* isso deixa a caixa de texto larga*/
+    margin-bottom: 24px; /* margem de baixo de cada caixa para outra*/
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%; /* isso deixa a caixa de texto larga*/
+    margin-bottom: 24px; /* margem de baixo de cada caixa para outra*/
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+button {
+    background: #772fd3;
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;  /* quando a setapassar pelo botao ficara um pouco opaco*/
+}
+button:active {
+    opacity: 0.6; /* quando a seta clicar no botao ficara um pouco mais opaco*/
+}
+
+section {
+    border: 1px solid #772fd3 ;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-img {
+    margin: 15px;
+}
+
+.currency-box {
+    display: flex;  /* deixa os itens um do lado do outro*/
+    flex-direction: column; /* alinha eles em coluna*/
+    align-items: center;  /* deixara alinhado no centro*/
+    gap: 4px;  /*deixa todos com uma distancia de px entre eles*/
+}
+
+.currency {
+color: #777777;
+font-size: 14px;
+}
+
+.currency-value, .currency-value-to-convert {
+color: #555555;
+font-size: 20px;
+font-weight: 700;
+}
+
+
+
+
+
+
+
+
+  
