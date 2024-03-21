@@ -11,6 +11,7 @@ function convertValues() {
     const dolarToday = 5.2
     const euroToday = 6.2
     const libraToday = 6.3
+    const bitcoinToday = 336.5
 
 
     if (currencySelect.value == "dolar") { // Se o select estiver selecionado valor em dolar, entra aqui
@@ -32,6 +33,13 @@ function convertValues() {
             style: "currency",
             currency: "GBP",
         }).format(inputCurrencyValue / libraToday)
+    }
+
+    if (currencySelect.value == "bitcoin") { // Se o select estiver selecionado valor em libra, entra aqui
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-DE", {
+            style: "currency",
+            currency: "BTC",
+        }).format(inputCurrencyValue / bitcoinToday)
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -58,6 +66,11 @@ function changeCurrency() {
     if (currencySelect.value == "libra") {
         currencyName.innerHTML = "Libra"
         currencyImage.src = "./assets/libra 1.png"
+    }
+
+    if (currencySelect.value == "bitcoin") {
+        currencyName.innerHTML = "Bitcoin"
+        currencyImage.src = "./assets/bitcoin 1.png"
     }
 
     convertValues() //isso permite que quando trocar o tipo da moeda, ja converta o valor, nao so o simbolo
